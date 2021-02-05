@@ -29,7 +29,7 @@ public class Vehicule {
 
     private int kilometrage;
 
-    private float localisation;
+    private String localisation;//lat, long(45.1, -1.5)
 
     public Vehicule() {
 
