@@ -9,21 +9,19 @@ import java.util.Date;
 @Entity
 @Getter
 @Setter
-@Table(name = "ContratLocation")
-public class Contrat {
+public class LocationVehicule {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "contrat_id")
+    @Column(name = "location_id")
     private Long id;
 
-    private Date date;
+    private Date debutDateHoraireLocation;
+    private Date finDateHoraraireLocation;
 
-    private int tarfication;
-
-    private String carteBancaireId;
+    private String debutLocalisationGps;
+    private String finLocalisationGps;
 
     @OneToOne
-    private Client client;
-
+    private Vehicule vehiculeId;
 }
