@@ -17,7 +17,7 @@ public class LocationVehicule {
     private Long id;
 
     private Date debutDateHoraireLocation;
-    private Date finDateHoraraireLocation;
+    private Date finDateHoraireLocation;
 
     private String debutLocalisationGps;
     private String finLocalisationGps;

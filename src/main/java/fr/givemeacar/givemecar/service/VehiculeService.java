@@ -8,9 +8,9 @@ import java.util.List;
 @Service
 public interface VehiculeService {
 
-    /*
-    @return List<Vehicule>
-    Récupere la list des véhicule
+    /**
+     *
+     * @return
      */
     List<Vehicule> getAllVehicule();
 

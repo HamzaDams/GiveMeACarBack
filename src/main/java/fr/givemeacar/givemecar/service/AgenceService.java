@@ -11,32 +11,35 @@ import java.util.Optional;
 @Service
 public interface AgenceService {
 
-    /*
-    @param  Agence
-    @return  Agence
-    Permet l'ajout d'un agence avec en parametre une agence
+    /**
+     * Permet l'ajout d'un agence avec en parametre une agence
+     * @param agence
+     * @return Agence
      */
     Agence createAgence(Agence agence);
 
-    /*
-    @param Vehicule
-    @return Vehicule
-    Permet l'ajout d'un véhicule avec en parametre un véhicule
+    /**
+     * Permet l'ajout d'un véhicule avec en parametre un véhicule
+     * @param vehicule
+     * @return Vehicule
      */
     Vehicule ajoutVehicule(Vehicule vehicule);
 
-    /*
-    @param : Long vehiculeId
-    @return void
-    Suppression d'un véhicule avec en parametre l'id du Véhicule
+    /**
+     * Suppression d'un véhicule avec en parametre l'id du Véhicule
+     * @param vehiculeId
+     * @return void
      */
     void deleteVehicule(Long vehiculeId);
 
-    /*
-     @param Client clientId, int tarif, Vehicule vehiculeId
-     @return Contrat
-     Etabli un contrat entre l
-    */
+    /**
+     *
+     * @param clientId
+     * @param tarif
+     * @param vehiculeId
+     * @param agenceId
+     * @return Contrat
+     */
     Contrat faireUnContrat(Client clientId, int tarif, Vehicule vehiculeId, Agence agenceId);
 
 }

@@ -18,6 +18,7 @@ public class VehiculeController {
     @Autowired
     private VehiculeService vehiculeService;
 
+
     @GetMapping("/list")
     public List<Vehicule> getAllVehicule(){
         return vehiculeService.getAllVehicule();
