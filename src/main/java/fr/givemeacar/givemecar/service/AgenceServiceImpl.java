@@ -36,7 +36,7 @@ public class AgenceServiceImpl implements AgenceService{
     }
 
     @Override
-    public Contrat faireUnContrat(Client clientId, int tarif, Vehicule vehiculeId) {
+    public Contrat faireUnContrat(Client clientId, int tarif, Vehicule vehiculeId, Agence agenceId) {
         return null;
     }
 }
