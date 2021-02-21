@@ -36,7 +36,7 @@ public class Agence {
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinTable(
-            name = "list_vehicule_agence",
+            name = "stock_agence",
             joinColumns = @JoinColumn(name = "id"),
             inverseJoinColumns = @JoinColumn(name = "vehicule_id")
     )

@@ -1,5 +1,6 @@
 package fr.givemeacar.givemecar.service;
 
+import fr.givemeacar.givemecar.exception.BusinessResourceException;
 import fr.givemeacar.givemecar.model.Agence;
 import fr.givemeacar.givemecar.model.Client;
 import fr.givemeacar.givemecar.model.Contrat;
@@ -16,7 +17,7 @@ public interface AgenceService {
      * @param agence
      * @return Agence
      */
-    Agence createAgence(Agence agence);
+    Agence createAgence(Agence agence) throws BusinessResourceException;
 
     /**
      * Permet l'ajout d'un véhicule avec en parametre un véhicule
