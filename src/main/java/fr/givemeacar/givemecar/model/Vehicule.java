@@ -31,6 +31,10 @@ public class Vehicule {
 
     private String localisation;//lat, long(45.1, -1.5)
 
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id")
+    private Agence agence;
+
     public Vehicule() {
 
     }

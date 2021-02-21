@@ -5,5 +5,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public interface ForfaitService {
+
+    /**
+     *
+     * @param forfait
+     * @return Forfait
+     */
     Forfait creerForfait(Forfait forfait);
 }

@@ -1,5 +1,6 @@
 package fr.givemeacar.givemecar.controller;
 
+import fr.givemeacar.givemecar.exception.BusinessResourceException;
 import fr.givemeacar.givemecar.model.Agence;
 import fr.givemeacar.givemecar.model.Vehicule;
 import fr.givemeacar.givemecar.service.AgenceService;
@@ -17,7 +18,8 @@ public class AgenceController {
 
     @PostMapping("/ajouterAgence")
     @ResponseBody
-    public ResponseEntity<?> createAgence(@RequestBody Agence agence) {
+    public ResponseEntity<?> createAgence(@RequestBody Agence agence) throws BusinessResourceException {
+        agenceService.createAgence(agence);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
