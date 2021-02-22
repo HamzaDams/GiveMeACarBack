@@ -29,6 +29,8 @@ public class Vehicule {
 
     private int kilometrage;
 
+    private Boolean etat = false;
+
     private String localisation;//lat, long(45.1, -1.5)
 
     @OneToOne(fetch = FetchType.LAZY)
@@ -37,5 +39,9 @@ public class Vehicule {
 
     public Vehicule() {
 
+    }
+
+    public void setEtat(Boolean etat) {
+        this.etat = false;
     }
 }
