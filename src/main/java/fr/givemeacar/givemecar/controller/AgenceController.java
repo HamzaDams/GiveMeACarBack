@@ -18,17 +18,13 @@ public class AgenceController {
     private AgenceService agenceService;
 
     @PostMapping("/ajouterAgence")
-    @ResponseBody
     public ResponseEntity<?> createAgence(@RequestBody Agence agence) throws BusinessResourceException {
-        agenceService.createAgence(agence);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(agenceService.createAgence(agence),HttpStatus.CREATED);
     }
 
     @PostMapping("/ajouterVehicule")
-    @ResponseBody
     public ResponseEntity<?> ajoutVehicule(@RequestBody Vehicule vehicule) {
-        agenceService.ajoutVehicule(vehicule);
-        return new ResponseEntity<>(HttpStatus.CREATED);//201
+        return new ResponseEntity<>(agenceService.ajoutVehicule(vehicule),HttpStatus.CREATED);//201
     }
 
     @GetMapping("/supprimerVehicule/{id}")

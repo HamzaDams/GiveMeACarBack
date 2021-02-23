@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class AgenceServiceImpl implements AgenceService{
 
-   @Autowired
+    @Autowired
     private AgenceRepo agenceRepo;
 
    @Autowired
